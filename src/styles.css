@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+/*----------------------Footer-----------------------------------*/
+#footer {
+  background: #130018;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #ffffffad;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Frijole', cursive;
+  color: #ffffff85;
+  margin-top: 8px;
+}
+
+#footer .credits a {
+  color: #E91E63;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #E91E63;
+  color: #fff;
+  padding: 6px 9px;
+  font-size: 16px;
+  border-radius: 10px;
+  right: 15px;
+  bottom: 15px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.back-to-top:focus {
+  background: #E91E63;
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #00bebe;
+  color: #fff;
+}
+
+.fa-facebook-square:hover {
+  color: #122a5c;
+}
+
+.fa-twitter-square {
+  opacity: 0.9;
+  color: #1DA1F2;
+}
+
+.fa-twitter-square:hover {
+  opacity: 1;
+}
+
+.fa-github-square {
+  opacity: 0.9;
+  color: #cfcfcf;
+}
+
+.fa-github-square:hover {
+  opacity: 1;
+  color: #3b3b3b;
+}
+
+.fa-linkedin-in {
+  opacity: 0.9;
+  color: #0a66c2;
+}
+
+.fa-linkedin-in:hover {
+  opacity: 1;
+}
+
+.social li {
+  margin: 15px 0;
+}
+/*# sourceMappingURL=styles.css.map */
