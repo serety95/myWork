@@ -8,6 +8,11 @@
   color: #fff;
 }
 
+#footer .heading {
+  color: #E91E63;
+  font-weight: 700;
+}
+
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
