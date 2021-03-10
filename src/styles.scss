@@ -37,7 +37,6 @@ $secondryColor: rgb(48, 48, 48);
 
 .back-to-top {
   position: fixed;
-  display: none;
   background: $mainColor;
   color: #fff;
   padding: 6px 9px;
@@ -56,7 +55,7 @@ $secondryColor: rgb(48, 48, 48);
     background: #00bebe;
     color: #fff;
   }
-
+  
 }
 
 
@@ -91,6 +90,4 @@ $secondryColor: rgb(48, 48, 48);
   }
 }
 
-.social li {
-  margin: 15px 0;
-}
+

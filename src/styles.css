@@ -28,7 +28,6 @@
 
 .back-to-top {
   position: fixed;
-  display: none;
   background: #E91E63;
   color: #fff;
   padding: 6px 9px;
@@ -81,9 +80,5 @@
 
 .fa-linkedin-in:hover {
   opacity: 1;
-}
-
-.social li {
-  margin: 15px 0;
 }
 /*# sourceMappingURL=styles.css.map */

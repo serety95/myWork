@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebookSquare, faGithubSquare, faTwitterSquare,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faGithubSquare, faTwitterSquare, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {faChevronUp} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -11,6 +12,7 @@ faFacebook=faFacebookSquare;
 faGithub=faGithubSquare;
 faTwitter=faTwitterSquare;
 faLinkedin=faLinkedinIn;
+faChevronUp=faChevronUp;
   constructor() { }
 
   ngOnInit(): void {
