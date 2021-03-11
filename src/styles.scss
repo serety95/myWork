@@ -4,33 +4,146 @@ $secondryColor: rgb(48, 48, 48);
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
 
+///////////// common elements/////////////////
+.heading {
+  color: $mainColor;
+  font-weight: 700;
+}
+
+
+/* Our Portfolio Section
+--------------------------------*/
+#portfolio {
+  background: linear-gradient(30deg, #130018 54%, #470050 100%);
+  padding: 20px 0;
+
+  p {
+    color: white;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .portfolio-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    /* display: none; */
+  }
+
+  .portfolio-item {
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+
+    h2 {
+      color: #ffffff;
+      font-size: 16px;
+      margin: 0;
+      text-transform: capitalize;
+      font-weight: 700;
+      background: #00000085;
+      border: 1px solid #fff;
+      padding: 25px;
+      background: linear-gradient(45deg, #e91e6357 0%, #405ece91 100%);
+      display: none;
+    }
+
+    img {
+      -webkit-transition: all ease-in-out 0.4s;
+      transition: all ease-in-out 0.4s;
+      width: 100%;
+
+    }
+
+    &:hover {
+      img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      h2 {
+        display: block;
+      }
+
+      .portfolio-overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+}
+
+
+.box2 {
+  padding: 40px;
+  margin: 40px 10px;
+  background: #fff;
+  transition: 0.4s;
+  border: 2px solid $mainColor;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+
+  &:after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: $mainColor;
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+    right: -30px;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+  }
+}
+
 /*----------------------Footer-----------------------------------*/
 #footer {
   background: #130018;
   padding: 0 0 30px 0;
   font-size: 14px;
   color: #fff;
+
   
-  .heading{
-    color: $mainColor;
-    font-weight: 700;
-  }
-  
+
 
   .copyright {
     text-align: center;
     padding-top: 30px;
     color: #ffffffad;
   }
+
   .credits {
     text-align: center;
     font-size: 13px;
     font-family: 'Frijole', cursive;
     color: #ffffff85;
     margin-top: 8px;
+
     a {
-        color: $mainColor;
-      }
+      color: $mainColor;
+    }
   }
 
 }
@@ -55,43 +168,45 @@ $secondryColor: rgb(48, 48, 48);
     color: #fff;
     outline: none;
   }
+
   &:hover {
     background: #00bebe;
     color: #fff;
   }
-  
+
 }
 
 
-.fa-facebook-square{
-&:hover {
-  color: #122a5c
-}
+.fa-facebook-square {
+  &:hover {
+    color: #122a5c
+  }
 }
 
-.fa-twitter-square{
+.fa-twitter-square {
   opacity: 0.9;
   color: #1DA1F2;
-&:hover {
-  opacity: 1;
-}
-}
-.fa-github-square{
-  opacity: 0.9;
-  color:  #cfcfcf;
-  &:hover {
-    opacity: 1;
-    color:  #3b3b3b;
-  }
-}
 
-.fa-linkedin-in{
-  opacity: 0.9;
-  color:  #0a66c2;
- 
   &:hover {
     opacity: 1;
   }
 }
 
+.fa-github-square {
+  opacity: 0.9;
+  color: #cfcfcf;
 
+  &:hover {
+    opacity: 1;
+    color: #3b3b3b;
+  }
+}
+
+.fa-linkedin-in {
+  opacity: 0.9;
+  color: #0a66c2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
