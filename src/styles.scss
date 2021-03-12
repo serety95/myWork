@@ -1,4 +1,4 @@
-$mainColor:#E91E63;
+$mainColor:#ff005d; 
 $secColor:#2ffff5;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
@@ -52,14 +52,14 @@ $secColor:#2ffff5;
 
 .btn-get-started {
   background: transparent;
-  padding: 20px;
+  padding: 10px 20px;
+  font-weight: bolder;
   border: 2px solid $mainColor;
   color: $mainColor;
   &:hover {
     background: none;
     color: #fff;
     background: $mainColor;
-    border: 2px solid $mainColor;
   }
 }
 
@@ -263,3 +263,149 @@ $secColor:#2ffff5;
     opacity: 1;
   }
 }
+
+
+/////////////////start of page not found/////////////////
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+#notFound {
+  background: radial-gradient(circle, #270017 0%, #000000 100%);
+
+  h2 {
+    font-family: 'Audiowide', cursive !important;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: $secColor;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px $secColor;
+    animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
+  }
+
+  h1 {
+    font-family: 'Audiowide', cursive !important;
+    text-transform: uppercase;
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+    font-weight: 900;
+    font-size: 74px;
+    animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
+  }
+
+  .btn-get-started {
+    font-family: 'Audiowide', cursive !important;
+    color: white !important;
+    animation: fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
+  }
+}
+
+
+@keyframes flicker4 {
+  0% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  30% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  31% {
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+  }
+
+  32% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  36% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  37% {
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+  }
+
+  41% {
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+  }
+
+  42% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  85% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  86% {
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+  }
+
+  95% {
+    color: $secColor;
+    text-shadow: 1px 1px 4px $secColor;
+  }
+
+  96% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+
+  100% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+}
+
+@keyframes fadeInText {
+  1% {
+    color: #00fff2;
+    text-shadow: 1px 1px 4px #00fff2;
+  }
+  69% {
+    color: #00fff2;
+    text-shadow: 1px 1px 4px #00fff2;
+  }
+
+  70% {
+    color: $mainColor;
+    text-shadow: 0px 0px 14px $mainColor;
+  }
+
+  100% {
+    color: $mainColor;
+    text-shadow: 1px 1px 4px $mainColor;
+  }
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(25deg);
+  }
+
+  50% {
+    filter: hue-rotate(50deg);
+  }
+  75% {
+    filter: hue-rotate(25deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+/////////////////end of page not found/////////////////
