@@ -1,79 +1,66 @@
-
-$navColor:rgba(108, 110, 110, 0.815);
 $mainColor:#E91E63;
-$secondryColor: rgb(48, 48, 48);
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+$secColor:#2ffff5;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+
 
 ///////////// common elements/////////////////
+*{
+  font-family: 'Montserrat', sans-serif;
+}
 .heading {
   color: $mainColor;
-  font-weight: 700;
+  font-weight: 900;
+  
 }
+
 /* Our home Section
 --------------------------------*/
 /*---------------------------------------------*/
 
 #intro {
-    
+
   height: 100vh;
   position: relative;
-  background: url("../img/intro-carousel/1.jpg") no-repeat;
+  background: url("./assets/images/pics/header/1.jpg") no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: right 25% top 50%;;
+
+  .intro-content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 14%;
+    z-index: 10;
+    
+
+    h2 {
+      font-size: 24px;
+      span {
+        color: #fff;
+        font-size: 64px;
+        text-transform: uppercase;
+        background: -webkit-linear-gradient($secColor 20%,#ff97c0, $mainColor );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
 }
 
-#intro .intro-content {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 14%;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-
-#intro .intro-content h2 {
-  color:$mainColor;
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: left;
-}
-
-#intro .intro-content h2 span {
-  color: #fff;
-  font-size: 64px;
-  text-transform: uppercase;
-  font-family: 'Russo One', sans-serif;
-  background: -webkit-linear-gradient(#ffc08a, $mainColor);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.intro-btn{
-  display: flex;
-  justify-content: flex-start;
-}
 .btn-get-started {
   background: transparent;
   padding: 20px;
   border: 2px solid $mainColor;
   color: $mainColor;
+  &:hover {
+    background: none;
+    color: #fff;
+    background: $mainColor;
+    border: 2px solid $mainColor;
+  }
 }
-
-.btn-get-started:hover {
-  background: none;
-  color: #fff;
-  background: $mainColor;
-  border: 2px solid $mainColor;
-}
-
-
-
 
 
 /* Our Portfolio Section
@@ -190,7 +177,7 @@ $secondryColor: rgb(48, 48, 48);
   font-size: 14px;
   color: #fff;
 
-  
+
 
 
   .copyright {
