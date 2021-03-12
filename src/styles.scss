@@ -41,6 +41,7 @@ $secColor:#2ffff5;
         font-size: 64px;
         text-transform: uppercase;
         background: -webkit-linear-gradient($secColor 20%,#ff97c0, $mainColor );
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
