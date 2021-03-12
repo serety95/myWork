@@ -7,10 +7,28 @@ $secColor:#2ffff5;
 *{
   font-family: 'Montserrat', sans-serif;
 }
-.heading {
+
+.sectionHeader{
   color: $mainColor;
   font-weight: 900;
-  
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
+  &::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 62px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-top: $mainColor solid 3px;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* Our home Section
@@ -35,6 +53,9 @@ $secColor:#2ffff5;
     
 
     h2 {
+      color: $mainColor;
+  font-weight: 900;
+  text-transform: uppercase;
       font-size: 24px;
       span {
         color: #fff;

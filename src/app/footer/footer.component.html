@@ -53,7 +53,7 @@
       <div class="credits">
         developed by <a href="https://www.linkedin.com/in/elserety/"> Mohamed Elserety</a>
       </div>
-      <a href="#" class="back-to-top"><fa-icon [icon]="faChevronUp" size="3x"></fa-icon></a>
+      <a *ngIf="isShow" (click)="gotoTop()" class="back-to-top"><fa-icon [icon]="faChevronUp" size="3x"></fa-icon></a>
     </div>
 
   </footer>
