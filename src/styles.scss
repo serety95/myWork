@@ -10,6 +10,70 @@ $secondryColor: rgb(48, 48, 48);
   color: $mainColor;
   font-weight: 700;
 }
+/* Our home Section
+--------------------------------*/
+/*---------------------------------------------*/
+
+#intro {
+    
+  height: 100vh;
+  position: relative;
+  background: url("../img/intro-carousel/1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#intro .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 14%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+#intro .intro-content h2 {
+  color:$mainColor;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+#intro .intro-content h2 span {
+  color: #fff;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
+  background: -webkit-linear-gradient(#ffc08a, $mainColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-btn{
+  display: flex;
+  justify-content: flex-start;
+}
+.btn-get-started {
+  background: transparent;
+  padding: 20px;
+  border: 2px solid $mainColor;
+  color: $mainColor;
+}
+
+.btn-get-started:hover {
+  background: none;
+  color: #fff;
+  background: $mainColor;
+  border: 2px solid $mainColor;
+}
+
+
+
 
 
 /* Our Portfolio Section
