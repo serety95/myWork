@@ -21,7 +21,6 @@ faChevronUp=faChevronUp;
   constructor() { }
   @HostListener('window:scroll')
   checkScroll() {
-    console.log("helo")
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (scrollPosition >= this.topPosToStartShowing) {
       this.isShow = true;
