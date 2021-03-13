@@ -30,7 +30,15 @@ $mainColor:#ff005d;
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
     }
-
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        display: block;
+        margin: 0;
+        padding-top: 15px;
+        color: #838383;
+      }
     h4 {
       margin-left: 100px;
       font-weight: 700;
@@ -43,43 +51,11 @@ $mainColor:#ff005d;
       margin: 0;
 
       a {
+          text-decoration: none;
         color: #444;
       }
     }
+
   }
 
-}
-
-
-#services .box .icon {
-  display: block;
-  width: 100%;
-  text-align: left;
-  padding: 15px 0;
-
-  i {
-    color: #bababa;
-    font-size: 44px;
-    transition: 0.5s;
-    line-height: 0;
-    margin-top: 0px;
-
-    &::before {
-      background: linear-gradient(45deg, $mainColor 0%, #405ece 100%);
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-}
-
-
-#services .box p {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  display: block;
-  margin: 0;
-  padding-top: 15px;
-  color: #838383;
 }
