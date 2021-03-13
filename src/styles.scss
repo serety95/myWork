@@ -8,7 +8,9 @@ $bgMain:#ff005d;
 *{
   font-family: 'Montserrat', sans-serif;
 }
-
+.color{
+  color: $mainColor !important;
+}
 .sectionHeader{
   color: $mainColor;
   font-weight: 900;
