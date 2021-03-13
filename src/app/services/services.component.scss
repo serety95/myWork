@@ -30,6 +30,22 @@ $mainColor:#ff005d;
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
     }
+
+    h4 {
+      margin-left: 100px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      font-size: 22px;
+      display: block;
+      width: 100%;
+      text-align: left;
+      float: left;
+      margin: 0;
+
+      a {
+        color: #444;
+      }
+    }
   }
 
 }
@@ -40,39 +56,23 @@ $mainColor:#ff005d;
   width: 100%;
   text-align: left;
   padding: 15px 0;
+
+  i {
+    color: #bababa;
+    font-size: 44px;
+    transition: 0.5s;
+    line-height: 0;
+    margin-top: 0px;
+
+    &::before {
+      background: linear-gradient(45deg, $mainColor 0%, #405ece 100%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 
-#services .box .icon i {
-  color: #bababa;
-  font-size: 44px;
-  transition: 0.5s;
-  line-height: 0;
-  margin-top: 0px;
-}
-
-.icon i:before {
-  background: linear-gradient(45deg, $mainColor 0%, #405ece 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#services .box h4 {
-  margin-left: 100px;
-  font-weight: 700;
-  margin-bottom: 24px;
-  font-size: 22px;
-  display: block;
-  width: 100%;
-  text-align: left;
-  float: left;
-  margin: 0;
-
-}
-
-#services .box h4 a {
-  color: #444;
-}
 
 #services .box p {
   font-size: 14px;
