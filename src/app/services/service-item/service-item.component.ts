@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 import {faGem} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-service-item',
@@ -7,6 +7,7 @@ import {faGem} from '@fortawesome/free-solid-svg-icons';
 })
 export class ServiceItemComponent implements OnInit {
   faGem=faGem;
+  @Input() product: any; 
   constructor() { }
 
   ngOnInit(): void {

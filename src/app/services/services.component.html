@@ -8,29 +8,39 @@
         illum fore</p>
     </div>
 
+    <div class="row w-100">
+
+      <app-service-item *ngFor="let item of getSlicedArrOfServices()" [product]="item"
+        class="col-12 col-lg-4 col-md-6 col-s-12"></app-service-item>
+
+
+
+    </div>
     <div class="row">
-      
-        <app-service-item class="col-12 col-lg-4 col-md-6 col-s-12"></app-service-item>
-      
+      <nav aria-label="...">
+        <ul class=" pagination justify-content-center">
+          <li class="page-link bg-dark" (click)="
+                  currentPage === 0
+                    ? currentPage
+                    : (currentPage = currentPage - 1)
+                " style="cursor: pointer">
+            <i class="fas fa-long-arrow-alt-left"></i>dddd
+          </li>
 
-      <div class="col-12 col-lg-4 col-md-6 col-s-12">
-        <div class="box ">
-          <div class="d-flex justify-content-start align-items-start"><i class="fa fa-hand-pointer-o fa-2x"></i></div>
-          <h4 class="title"><a href="">Event Party</a></h4>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-            consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
-        </div>
-      </div>
+          <li *ngFor="let page of numOfPages; let i = index" class="page-link bg-dark" (click)="currentPage = i"
+            [ngClass]="{ active: i == currentPage }" style="cursor: pointer">
+            {{ page }}
+          </li>
 
-      <div class="col-12 col-lg-4 col-md-6 col-s-12">
-        <div class="box">
-          <div class="d-flex justify-content-start align-items-start"><i class="fa fa-music fa-2x"></i></div>
-          <h4 class="title"><a href="">Music Galla</a></h4>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro
-            consequatur aliquam, incidunt fugiat culpa esse aute nulla.</p>
-        </div>
-      </div>
-
+          <li class="page-link bg-dark" (click)="
+                  currentPage >= lastPage - 1
+                    ? currentPage
+                    : (currentPage = currentPage + 1)
+                " style="cursor: pointer">
+            <i class="fas fa-long-arrow-alt-right"></i>dddd
+          </li>
+        </ul>
+      </nav>
     </div>
 
   </div>

@@ -192,6 +192,60 @@ $bgMain:#ff005d;
     -moz-transform: translateY(-10px);
   }
 }
+/*----------------services-----------------------------*/
+
+#services {
+
+  .box {
+   
+    margin: 40px 10px;
+    background: #212529;
+    color: white;
+    transition: 0.4s;
+    border: 2px solid $mainColor;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+
+    &::after {
+      content: '';
+      width: 80px;
+      height: 80px;
+      background: $mainColor;
+      position: absolute;
+      top: -30px;
+      border-radius: 50%;
+      right: -30px;
+    }
+
+    &:hover {
+      box-shadow: 4px 10px 7px #21252973;
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+    }
+    .boxHeader{
+        
+        padding: 20px;
+        .myIcon{
+            background-color: $bgMain;
+            min-width: 75px;
+            min-height: 75px;
+            max-height: 75px;
+            max-width: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    
+
+  }
+
+}
+/*----------------services-----------------------------*/
+
 
 /*----------------------Footer-----------------------------------*/
 #footer {

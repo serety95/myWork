@@ -4,12 +4,12 @@
             <fa-icon [icon]="faGem" class="myIcon rounded-circle py-3" size="3x"></fa-icon>
         </div>
         <div class="col-8 d-flex flex-column justify-content-center align-items-start">
-            <h4 class="title">Organisation</h4>
-            <p class="subTitle">secondry text</p>
+            <h4 class="title">{{product.title}}</h4>
+            <p class="subTitle">{{product.subTitle}}</p>
         </div>
     </div>
     <div class="row">
-        <img src="../../assets/images/pics/portfolio/10.jpg" alt="">
+        <img src={{product.img}} alt="">
     </div>
     <div class="row m-2">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, qui!</p>
