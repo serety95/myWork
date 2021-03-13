@@ -13,8 +13,8 @@ export class ServicesComponent implements OnInit {
       img:"../../assets/images/pics/portfolio/5.jpg",
 
     },{
-      title:"hello",
-      subTitle:"sssss",
+      title:"amira",
+      subTitle:"web developer",
       img:"../../assets/images/pics/portfolio/10.jpg",
 
     },{
