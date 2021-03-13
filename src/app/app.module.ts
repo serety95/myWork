@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
+import { ServiceItemComponent } from './services/service-item/service-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ServicesComponent } from './services/services.component';
     AboutComponent,
     PageNotFoundComponent,
     HomeComponent,
-    ServicesComponent
+    ServicesComponent,
+    ServiceItemComponent
   ],
   imports: [
     BrowserModule,
