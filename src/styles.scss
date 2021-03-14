@@ -1,34 +1,42 @@
-$mainColor:#ff005d; 
+$mainColor:#ff005d;
 $secColor:#2ffff5;
 $bgMain:#ff005d;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
 
 ///////////// common elements/////////////////
-*{
-  font-family: 'Montserrat', sans-serif;
+
+@mixin vendor-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
 }
 
+* {
+  font-family: 'Montserrat', sans-serif;
+  @include vendor-prefix('box-sizing', 'border-box');
+}
 
-
-
-@keyframes ripple{
-  to{
+@keyframes ripple {
+  to {
     transform: scale(2.5);
     opacity: 0.9;
   }
 }
-.page-link{
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
+
+.page-link {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   font-weight: bolder;
   color: $mainColor !important;
-  &:active{
-    
+
+  &:active {
+
     animation: ripple 0.2s linear;
   }
 }
-.sectionHeader{
+
+.sectionHeader {
   color: $mainColor;
   font-weight: 900;
   text-transform: uppercase;
@@ -36,7 +44,8 @@ $bgMain:#ff005d;
   position: relative;
   padding-bottom: 20px;
   text-align: center;
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     display: block;
@@ -61,7 +70,8 @@ $bgMain:#ff005d;
   position: relative;
   background: url("./assets/images/pics/header/1.jpg") no-repeat;
   background-size: cover;
-  background-position: right 25% top 50%;;
+  background-position: right 25% top 50%;
+  ;
 
   .intro-content {
     position: absolute;
@@ -70,18 +80,19 @@ $bgMain:#ff005d;
     right: 0;
     left: 14%;
     z-index: 10;
-    
+
 
     h2 {
       color: $mainColor;
-  font-weight: 900;
-  text-transform: uppercase;
+      font-weight: 900;
+      text-transform: uppercase;
       font-size: 24px;
+
       span {
         color: #fff;
         font-size: 64px;
         text-transform: uppercase;
-        background: -webkit-linear-gradient($secColor 20%,#ff97c0, $mainColor );
+        background: -webkit-linear-gradient($secColor 20%, #ff97c0, $mainColor);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -97,6 +108,7 @@ $bgMain:#ff005d;
   font-weight: bolder;
   border: 2px solid $mainColor;
   color: $mainColor;
+
   &:hover {
     background: none;
     color: #fff;
@@ -211,12 +223,13 @@ $bgMain:#ff005d;
     -moz-transform: translateY(-10px);
   }
 }
+
 /*----------------services-----------------------------*/
 
 #services {
 
   .box {
-   
+
     margin: 40px 10px;
     background: #212529;
     color: white;
@@ -243,26 +256,27 @@ $bgMain:#ff005d;
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
     }
-    .boxHeader{
-        
-        padding: 20px;
-        .myIcon{
-            background-color: $bgMain;
-            min-width: 75px;
-            min-height: 75px;
-            max-height: 75px;
-            max-width: 75px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+
+    .boxHeader {
+      padding: 20px;
+      
+      div img {
+        border: 2px solid $bgMain;
+        border-radius: 50%;
+        min-width: 75px;
+        min-height: 75px;
+        max-height: 75px;
+        max-width: 75px;
+        object-fit: cover;
+      }
     }
-    
-    
+
+
 
   }
 
 }
+
 /*----------------services-----------------------------*/
 
 
@@ -467,6 +481,7 @@ $bgMain:#ff005d;
     color: #00fff2;
     text-shadow: 1px 1px 4px #00fff2;
   }
+
   69% {
     color: #00fff2;
     text-shadow: 1px 1px 4px #00fff2;
@@ -487,6 +502,7 @@ $bgMain:#ff005d;
   0% {
     filter: hue-rotate(0deg);
   }
+
   25% {
     filter: hue-rotate(25deg);
   }
@@ -494,6 +510,7 @@ $bgMain:#ff005d;
   50% {
     filter: hue-rotate(50deg);
   }
+
   75% {
     filter: hue-rotate(25deg);
   }
