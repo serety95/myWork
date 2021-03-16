@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ServiceItemComponent } from './services/service-item/service-item.component';
+import { EventsComponent } from './events/events.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { ServiceItemComponent } from './services/service-item/service-item.compo
     PageNotFoundComponent,
     HomeComponent,
     ServicesComponent,
-    ServiceItemComponent
+    ServiceItemComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
