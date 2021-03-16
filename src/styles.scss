@@ -206,7 +206,7 @@ $bgDark:#212529;
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-  
+  color: white;
     &:after {
       content: '';
       width: 80px;
@@ -224,6 +224,7 @@ $bgDark:#212529;
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
     }
+    
   }
 }
 
